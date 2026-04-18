@@ -1,4 +1,4 @@
-# Curador de Notícias
+# News Curator
 
 An AI-powered news curation pipeline that researches, investigates, fact-checks, and writes a full journalistic article on any topic you provide — all automatically.
 
