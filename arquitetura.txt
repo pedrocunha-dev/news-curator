@@ -1,0 +1,10 @@
+agents/
+   ├── pesquisador
+   ├── ranker
+   ├── apurador
+   ├── verificador
+   ├── redator
+
+skills/
+   ├── pesquisa-noticias
+   ├── rankeamento-noticias

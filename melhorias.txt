@@ -1,0 +1,5 @@
+1. Refatore estrutura (módulos)
+2. Adicione score de relevância
+3. Melhore prompts de resumo
+4. Salve resultados em JSON
+5. Crie uma CLI simples

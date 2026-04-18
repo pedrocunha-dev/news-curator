@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"from agno.workflow.types import StepInput; help\\(StepInput\\)\")",
+      "Bash(python3 *)",
+      "Bash(xargs -I{} sh -c 'echo \"=== {} ===\" && cat \"{}\"')",
+      "Bash(uv run *)",
+      "Bash(wait *)",
+      "Bash(curl -s http://localhost:8501)",
+      "Bash(mkdir -p ~/.streamlit)",
+      "Bash(echo '[browser] *)",
+      "Bash(gh auth *)",
+      "Bash(curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg)",
+      "Bash(sudo dd *)",
+      "Bash(dpkg --print-architecture)",
+      "Bash(echo \"deb [arch=$\\(dpkg --print-architecture\\) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main\")",
+      "Bash(sudo tee *)",
+      "Bash(sudo apt-get *)",
+      "Bash(git --version)",
+      "Bash(mkdir -p ~/bin)",
+      "Bash(curl -sL https://github.com/cli/cli/releases/download/v2.63.2/gh_2.63.2_linux_amd64.tar.gz)",
+      "Bash(tar -xz -C /tmp)",
+      "Bash(cp /tmp/gh_2.63.2_linux_amd64/bin/gh ~/bin/gh)",
+      "Bash(export PATH=\"$HOME/bin:$PATH\")",
+      "Bash(gh --version)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}

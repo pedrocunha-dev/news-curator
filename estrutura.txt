@@ -1,0 +1,23 @@
+Estrutura sugerida (mínima e eficiente)
+
+news_curator/
+│
+├── main.py
+│
+├── agents/
+│   └── curator_agent.py        # só orquestração (run_agent)
+│
+├── core/
+│   ├── agents_factory.py       # cria agentes (pesquisador, apurador…)
+│   ├── workflow_factory.py     # monta o workflow
+│   └── loop_utils.py           # contar_fontes + fontes_suficientes
+│
+├── infrastructure/
+│   ├── skills_loader.py        # carrega skills
+│   └── tools_factory.py        # cria file_tools
+│
+├── config/
+│   └── settings.py             # constantes + env
+│
+├── skills/
+└── output/
