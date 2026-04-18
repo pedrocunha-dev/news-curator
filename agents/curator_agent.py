@@ -26,9 +26,6 @@ from infrastructure.tools_factory import create_file_tools
 from core.agents_factory import create_agents
 from core.workflow_factory import create_workflow
 
-from agno.workflow import Workflow
-
-from core.ranker_utils import deve_publicar
 
 _OUTPUT_DIR = Path(__file__).resolve().parent.parent / "output"
 
@@ -48,11 +45,15 @@ _STEP_LABELS = {
 # ─────────────────────────────────────────────────────────────────────────────
 
 def run_agent(topic: str):
+    import uuid
+    run_dir = _OUTPUT_DIR / str(uuid.uuid4())[:8]
+    run_dir.mkdir(parents=True, exist_ok=True)
+
     skills = load_skills()
-    file_tools = create_file_tools()
+    file_tools = create_file_tools(run_dir)
     agents = create_agents(skills, file_tools)
 
-    workflow = create_workflow(agents)
+    workflow = create_workflow(agents, str(run_dir))
 
     print("\n📌 Etapas do workflow:")
     for i, step in enumerate(workflow.steps):
