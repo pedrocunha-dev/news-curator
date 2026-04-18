@@ -25,7 +25,10 @@
       "Bash(gh --version)",
       "Bash(git init *)",
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(gh repo *)",
+      "Skill(update-config)",
+      "Bash(bash -c 'export PATH=\"$HOME/bin:$PATH\" && cd \"/home/pedrocunha/Desktop/ASIMOV/Projeto - Curadoria de Noticias/news_curator-main\" && git add -A && git diff --cached --quiet || git commit -m \"chore: auto-sync\" && git push')"
     ]
   }
 }
