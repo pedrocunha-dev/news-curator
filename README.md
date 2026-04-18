@@ -209,6 +209,18 @@ Files from different runs are stored in separate subfolders and never overwrite 
 
 ---
 
+## Credits
+
+This project was built on top of **"Agente de Curadoria de Notícia"**, a prototype developed by [ASIMOV Academy](https://asimov.academy). The original prototype laid the foundation for the multi-agent pipeline architecture used here.
+
+This expanded version adds several features beyond the original, including:
+- A **Streamlit web interface** for interactive use
+- An **editorial ranking agent** with its own skill, score-based classification, and a programmatic editorial gate that halts the pipeline when a story doesn't meet publication standards
+
+All credit for the original concept and pipeline design goes to the ASIMOV Academy team.
+
+---
+
 ## License
 
 This project is open source. Feel free to use, adapt, and contribute.
