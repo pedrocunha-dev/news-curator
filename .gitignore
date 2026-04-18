@@ -1,5 +1,6 @@
-# Arquivos de ambiente
+# Arquivos de ambiente e credenciais
 .env
+.openclaude-profile.json
 
 # Arquivos de cache
 __pycache__/

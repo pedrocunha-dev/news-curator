@@ -1,18 +1,4 @@
 {
-  "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "export PATH=\"$HOME/bin:$PATH\" && cd \"/home/pedrocunha/Desktop/ASIMOV/Projeto - Curadoria de Noticias/news_curator-main\" && git add -A && git diff --cached --quiet || (git commit -m \"chore: auto-sync\" && git push) 2>/dev/null || true",
-            "timeout": 30,
-            "statusMessage": "Sincronizando com GitHub..."
-          }
-        ]
-      }
-    ]
-  },
   "permissions": {
     "allow": [
       "Bash(python3 -c \"from agno.workflow.types import StepInput; help\\(StepInput\\)\")",
@@ -42,7 +28,24 @@
       "Bash(git commit *)",
       "Bash(gh repo *)",
       "Skill(update-config)",
-      "Bash(bash -c 'export PATH=\"$HOME/bin:$PATH\" && cd \"/home/pedrocunha/Desktop/ASIMOV/Projeto - Curadoria de Noticias/news_curator-main\" && git add -A && git diff --cached --quiet || git commit -m \"chore: auto-sync\" && git push')"
+      "Bash(bash -c 'export PATH=\"$HOME/bin:$PATH\" && cd \"/home/pedrocunha/Desktop/ASIMOV/Projeto - Curadoria de Noticias/news_curator-main\" && git add -A && git diff --cached --quiet || git commit -m \"chore: auto-sync\" && git push')",
+      "Bash(git reflog *)",
+      "Bash(git gc *)",
+      "Bash(git push *)"
+    ]
+  },
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "export PATH=\"$HOME/bin:$PATH\" && cd \"/home/pedrocunha/Desktop/ASIMOV/Projeto - Curadoria de Noticias/news_curator-main\" && git add -A && git diff --cached --quiet || (git commit -m \"chore: auto-sync\" && git push) 2>/dev/null || true",
+            "timeout": 30,
+            "statusMessage": "Sincronizando com GitHub..."
+          }
+        ]
+      }
     ]
   }
 }
