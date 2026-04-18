@@ -211,7 +211,7 @@ Files from different runs are stored in separate subfolders and never overwrite 
 
 ## Credits
 
-This project was built on top of **"Agente de Curadoria de Notícia"**, a prototype developed by [ASIMOV Academy](https://asimov.academy). The original prototype laid the foundation for the multi-agent pipeline architecture used here.
+This project was built on top of **"Agente de Curadoria de Notícias"**, a prototype developed by [ASIMOV Academy](https://asimov.academy). The original prototype laid the foundation for the multi-agent pipeline architecture used here.
 
 This expanded version adds several features beyond the original, including:
 - A **Streamlit web interface** for interactive use
