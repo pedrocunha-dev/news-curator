@@ -31,7 +31,8 @@
       "Bash(bash -c 'export PATH=\"$HOME/bin:$PATH\" && cd \"/home/pedrocunha/Desktop/ASIMOV/Projeto - Curadoria de Noticias/news_curator-main\" && git add -A && git diff --cached --quiet || git commit -m \"chore: auto-sync\" && git push')",
       "Bash(git reflog *)",
       "Bash(git gc *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(nohup bash *)"
     ]
   },
   "hooks": {
